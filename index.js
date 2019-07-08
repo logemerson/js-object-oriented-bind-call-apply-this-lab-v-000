@@ -9,3 +9,7 @@ function setThisWithCall(fn, thisValue, arg) {
 function setThisWithApply(fn, thisValue, argArray) {
 	return fn.apply(thisValue, argArray);
 }
+
+function returnNewFunctionOf(copiedFn, thisValue) {
+	return copiedFn.bind(thisValue);
+}
